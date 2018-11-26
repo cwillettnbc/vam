@@ -34,8 +34,7 @@ class Header extends Component {
     let is_platform = pathname.indexOf("platform") > -1,
         is_mode = pathname.indexOf("mode") > -1,
         is_edit = pathname.indexOf("edit") > -1,
-        is_brand = pathname == "" && !is_platform && !is_mode && !is_edit;
-        // is_brand = true;
+        is_brand = (pathname == "" || pathname == "/") && !is_platform && !is_mode && !is_edit;
 
     return (
         <header className="main__header">

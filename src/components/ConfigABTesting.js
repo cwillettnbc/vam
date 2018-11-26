@@ -108,7 +108,7 @@ class ConfigABTesting extends Component {
           </div>
         </div>
         <a href="#" className="btn--ab" id="btnAddAB">
-          <img src="../public/assets/img/icon-plus.svg"/>
+          <img src="/img/icon-plus.svg"/>
           <span>Add Variant</span>
         </a>
       </div>

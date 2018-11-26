@@ -43,11 +43,12 @@ var config = {
   devServer: {
     publicPath: '/',
     contentBase: BUILD_DIR, // where files are published
+    historyApiFallback: true, // 404s will fallback to /index.html
     compress: true, // compress with gzip
     disableHostCheck: false, // prevents attacks
     open: true, // automatically launches in browser
     inline: true,
-    port: 9001,
+    port: 3000,
     host: 'localhost', // Change to '0.0.0.0' for external facing server
     stats: 'normal', // 'normal'
     hot: true // enables hot loading
