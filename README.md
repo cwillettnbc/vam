@@ -1,4 +1,4 @@
-# [MPS: Video Ads Module](https://rrajkowski.github.io/react-vam)
+# [MPS: Video Ads Module]https://github.com/cwillettnbc/vam)
 
 This is an MVP project that uses React
 
@@ -10,16 +10,12 @@ This is an MVP project that uses React
 
 After cloning the repository, install dependencies:
 ```sh
-npm install
+yarn install
 ```
 
 Now you can run your local server:
 ```sh
-npm start
+yarn dev
 ```
 Server is located at http://localhost:3000/
 
-Note: To allow external viewing of the demo, change the following value in `webpack.config.js`
-
-#### 
-Working Demo [click here](https://rrajkowski.github.io/react-vam)
