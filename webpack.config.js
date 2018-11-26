@@ -1,15 +1,15 @@
-var webpack = require('webpack');
-var path = require('path');
-var htmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
+const path = require('path');
+const htmlWebpackPlugin = require('html-webpack-plugin');
 
-var BUILD_DIR = path.join(__dirname, 'public');
-var APP_DIR = path.join(__dirname, 'src');
+const BUILD_DIR = path.join(__dirname, 'public');
+const APP_DIR = path.join(__dirname, 'src');
 
 const VENDOR_LIBS = [
   'react', 'react-dom', 'react-router-dom'
 ];
 
-var config = {
+const config = {
   mode: 'none',
   entry: {
     bundle: APP_DIR + '/index.js',

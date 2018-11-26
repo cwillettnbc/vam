@@ -1,18 +1,20 @@
 const webpack = require('webpack');
 const path = require('path');
-const TransferWebpackPlugin = require('transfer-webpack-plugin');
+
+const BUILD_DIR = path.join(__dirname, 'public');
+const APP_DIR = path.join(__dirname, 'src');
 
 const config = {
   entry: {
     main: [
-      './src/app/index.js'
+      APP_DIR + '/index.js'
     ]
   },
     // Render source-map file for final build
   devtool: 'source-map',
   // output config
   output: {
-    path: path.resolve(__dirname  + '/../' + 'public'), // Path of output file
+    path: BUILD_DIR, // Path of output file
     filename: 'index.js', // Name of output file
   },
   plugins: [
@@ -27,10 +29,6 @@ const config = {
     new webpack.optimize.UglifyJsPlugin({
       sourceMap: true,
     }),
-    // Transfer Files
-    new TransferWebpackPlugin([
-      {from: 'www/public'},
-    ], path.resolve(__dirname, 'src')),
   ],
   module: {
     rules: [

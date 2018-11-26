@@ -18,7 +18,7 @@ class Nav extends Component {
             <img src="/img/logo-mps.svg"/>
           </a>
           <div className="nav__aside">
-            <a className="nav__link" href={hostname}><img className="arrow_left"/> <span>Return to </span>MPS</a>
+            <a className="nav__link" href={hostname}><img src="/img/arrow-left.svg"/> <span>Return to </span>MPS</a>
           </div>
         </nav>
     );
